@@ -1,6 +1,10 @@
 body {
   box-sizing: border-box;
 }
+button{
+    background-color: inherit;
+    border: none;
+}
 header {
   display: flex;
   width: 100vw;
@@ -27,6 +31,7 @@ header {
   background-color: inherit;
   border: none;
   width: 30rem;
+  outline: none;
 }
 [type="search"]::placeholder {
   color: gray;
@@ -44,6 +49,10 @@ header {
   margin: 5px 0px;
   width: 5rem;
   font-weight: 400;
+}
+.header-actions button:hover{
+    background-color: #2874f1;
+    color: white;
 }
 .action-container {
   display: flex;

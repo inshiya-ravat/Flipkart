@@ -15,10 +15,11 @@
   <body>
     <header>
       <div class="header-search">
-        <div>
+        <button aria-label="flipkart logo" title="Flipkart">
           <svg
             class="logo"
             width="80px"
+            role="none"
             height="42px"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -107,8 +108,12 @@
               </linearGradient>
             </defs>
           </svg>
-        </div>
-        <div class="search-input">
+        </button>
+        <button
+          title="Search for products, brads and more"
+          aria-label="search for products, branch and more"
+          class="search-input"
+        >
           <input
             type="search"
             placeholder="Search for products,brands, and more"
@@ -117,6 +122,7 @@
             <svg
               viewBox="0 0 24 24"
               width="25px"
+              role="none"
               height="32px"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +138,7 @@
               />
             </svg>
           </div>
-        </div>
+        </button>
       </div>
       <nav class="header-actions">
         <button
@@ -143,12 +149,13 @@
           Login
         </button>
         <div class="action-container">
-          <a href="#">More</a>
+          <a href="#" aria-label="more" title="More">More</a>
           <div>
             <svg
               viewBox="0 0 24 24"
               width="20px"
               height="20px"
+              role="none"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -175,6 +182,7 @@
               viewBox="0 0 24 24"
               width="25px"
               height="25px"
+              role="none"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -192,7 +200,7 @@
               </g>
             </svg>
           </div>
-          <a href="#">Cart</a>
+          <a href="#" aria-label="go to cart" title="cart">Cart</a>
         </div>
       </nav>
     </header>
