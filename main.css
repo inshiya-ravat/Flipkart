@@ -201,6 +201,9 @@ main {
   padding: 20px;
   overflow-x: scroll;
 }
+.deal-products::-webkit-scrollbar{
+  display:none;
+}
 .product img {
   width: 200px;
   aspect-ratio: 1/1;
@@ -247,8 +250,13 @@ main {
   position: absolute;
   right: 0%;
   top: 50%;
+  transform: translate(0%,-50%);
+  height: 100px;
   background-color: white;
   box-shadow: 1px 1px 5px 2px var(--shadow);
+}
+.shift-right-link img{
+  margin-top: 30px;
 }
 
 /* media queries */
