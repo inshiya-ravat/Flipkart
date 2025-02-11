@@ -105,7 +105,11 @@ main{
 .category h4{
   font-size: 1rem;
   margin: 0;
+  color: black;
   font-weight: 400;
+}
+.categories > a{
+  text-decoration: none;
 }
 
 @media screen and (max-width:590px) {
