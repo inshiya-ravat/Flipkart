@@ -6,6 +6,10 @@
     <title>Flipkart</title>
     <link rel="stylesheet" href="main.css" />
     <link
+      rel="icon"
+      href="https://static-assets-web.flixcart.com/www/promos/new/20150528-140547-favicon-retina.ico"
+    />
+    <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
@@ -13,6 +17,7 @@
     />
   </head>
   <body>
+    <!-- header -->
     <header>
       <div class="header-search">
         <button aria-label="flipkart logo" title="Flipkart">
@@ -56,7 +61,11 @@
       </nav>
     </header>
     <main>
-      <section class="categories">
+      <!-- list of categories to shop from  -->
+      <section
+        class="categories"
+        aria-label="List of various category to buy products from"
+      >
         <a href="#">
           <div class="category">
             <img src="./assets/offer.svg" alt="offer" />
@@ -127,25 +136,442 @@
           </div>
         </a>
       </section>
-      <section>
-        <div class="deals">
-          <div class="deals-header">
-            <div>
-              <h5>Deals of the Day</h5>
-              <img src="./assets/timer.svg" alt="timer">
-              <p>22 : 07 : 36 Left</p>
+      <!-- list of available deals on various products  -->
+      <section
+        class="deals-section"
+        aria-label="List of various offer available on bunch of products"
+      >
+        <div>
+          <div class="deals">
+            <div class="deals-header">
+              <div>
+                <h5>Deals of the Day</h5>
+                <img src="./assets/timer.svg" alt="timer" />
+                <p>22 : 07 : 36 Left</p>
+              </div>
+              <div>
+                <button
+                  title="View All"
+                  aria-label="click to view all the deals of the day offers"
+                >
+                  VIEW ALL
+                </button>
+              </div>
             </div>
-            <div>
-              <button title="View All" aria-label="click to view all the deals of the day offers">
-                VIEW ALL
-              </button>
+            <!-- for laptop, tablet and desktop screens  -->
+            <div class="product-parent">
+              <div class="deal-products">
+                <a href="#">
+                  <div class="product">
+                    <img
+                      src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/c/t/x/-original-imah6s6prqw3w883.jpeg?q=70&crop=false"
+                      alt="watch"
+                    />
+                    <div>
+                      <p id="title">
+                        Casio, Fastrack, Titan, Noise, Boat, Rolex
+                      </p>
+                      <p class="offer">Upto 80%+Extra 10% Off</p>
+                      <p class="deal-name">Knockout Deals!</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="product">
+                    <img
+                      src="https://rukminim2.flixcart.com/image/416/416/l4x2rgw0/monitor/n/y/y/q24i-20-full-hd-23-8-66eegac3in-lenovo-original-imagfpgxzsk8ef26.jpeg?q=70&crop=false"
+                      alt="TV"
+                    />
+                    <div>
+                      <p id="title">Best of Electronics</p>
+                      <p class="offer">Extra 10% Off</p>
+                      <p class="deal-name">For All Top Models</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="product">
+                    <img
+                      src="https://rukminim2.flixcart.com/image/416/416/xif0q/shopsy-post-it/g/3/z/400-colorful-sticky-note-sheets-memo-pad-time-post-note-paper-original-imah34ygyearzmr2.jpeg?q=70&crop=false"
+                      alt="sticky notes"
+                    />
+                    <div>
+                      <p id="title">Stationary items</p>
+                      <p class="offer">Extra 10% Off</p>
+                      <p class="deal-name">Knockout Deals!</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="product">
+                    <img
+                      src="https://rukminim2.flixcart.com/image/416/416/xif0q/wall-decoration/p/f/y/stylish-wooden-welcome-to-our-sweet-home-wall-hanging-for-home-original-imagnjsqnjmzsr2q.jpeg?q=70&crop=false"
+                      alt="Home decor"
+                    />
+                    <div>
+                      <p id="title">Best of Home Decor</p>
+                      <p class="offer">From ₹49</p>
+                      <p class="deal-name">Lowest Price Ever</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="product">
+                    <img
+                      src="https://rukminim2.flixcart.com/image/416/416/xif0q/home-temple/r/2/2/23-46-5-p18n-rajasthani-art-56-original-imah97rtdnjuxdxq.jpeg?q=70&crop=false"
+                      alt="Home temple"
+                    />
+                    <div>
+                      <p id="title">Home Temples & more</p>
+                      <p class="offer">Extra 10% Off</p>
+                      <p class="deal-name">Space Saving furniture</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="product">
+                    <img
+                      src="https://rukminim2.flixcart.com/image/416/416/xif0q/musical-keyboard/a/z/d/37-0-45-37-keys-beston-original-imagyqf8tfvn9xzy.jpeg?q=70&crop=false"
+                      alt="Music"
+                    />
+                    <div>
+                      <p id="title">Premium Music Instruments</p>
+                      <p class="offer">Upto 70% Off</p>
+                      <p class="deal-name">Brings you Peace</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="product">
+                    <img
+                      src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/c/t/x/-original-imah6s6prqw3w883.jpeg?q=70&crop=false"
+                      alt="watch"
+                    />
+                    <div>
+                      <p id="title">
+                        Casio, Fastrack, Titan, Noise, Boat, Rolex
+                      </p>
+                      <p class="offer">Upto 80%+Extra 10% Off</p>
+                      <p class="deal-name">Knockout Deals!</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="product">
+                    <img
+                      src="https://rukminim2.flixcart.com/image/416/416/l4x2rgw0/monitor/n/y/y/q24i-20-full-hd-23-8-66eegac3in-lenovo-original-imagfpgxzsk8ef26.jpeg?q=70&crop=false"
+                      alt="TV"
+                    />
+                    <div>
+                      <p id="title">Best of Electronics</p>
+                      <p class="offer">Extra 10% Off</p>
+                      <p class="deal-name">For All Top Models</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="product">
+                    <img
+                      src="https://rukminim2.flixcart.com/image/416/416/xif0q/shopsy-post-it/g/3/z/400-colorful-sticky-note-sheets-memo-pad-time-post-note-paper-original-imah34ygyearzmr2.jpeg?q=70&crop=false"
+                      alt="sticky notes"
+                    />
+                    <div>
+                      <p id="title">Stationary items</p>
+                      <p class="offer">Extra 10% Off</p>
+                      <p class="deal-name">Knockout Deals!</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="product">
+                    <img
+                      src="https://rukminim2.flixcart.com/image/416/416/xif0q/wall-decoration/p/f/y/stylish-wooden-welcome-to-our-sweet-home-wall-hanging-for-home-original-imagnjsqnjmzsr2q.jpeg?q=70&crop=false"
+                      alt="Home decor"
+                    />
+                    <div>
+                      <p id="title">Best of Home Decor</p>
+                      <p class="offer">From ₹49</p>
+                      <p class="deal-name">Lowest Price Ever</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="product">
+                    <img
+                      src="https://rukminim2.flixcart.com/image/416/416/xif0q/home-temple/r/2/2/23-46-5-p18n-rajasthani-art-56-original-imah97rtdnjuxdxq.jpeg?q=70&crop=false"
+                      alt="Home temple"
+                    />
+                    <div>
+                      <p id="title">Home Temples & more</p>
+                      <p class="offer">Extra 10% Off</p>
+                      <p class="deal-name">Space Saving furniture</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" id="last_deal">
+                  <div class="product">
+                    <img
+                      src="https://rukminim2.flixcart.com/image/416/416/xif0q/musical-keyboard/a/z/d/37-0-45-37-keys-beston-original-imagyqf8tfvn9xzy.jpeg?q=70&crop=false"
+                      alt="Music"
+                    />
+                    <div>
+                      <p id="title">Premium Music Instruments</p>
+                      <p class="offer">Upto 70% Off</p>
+                      <p class="deal-name">Brings you Peace</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <a href="#last_deal" class="shift-right-link">
+                <img src="./assets/shift_right.svg" alt="shift right" />
+              </a>
+            </div>
+            <!-- for mobile screens  -->
+            <div class="product-list">
+              <ul>
+                <li>
+                  <a href="#">
+                    <div class="list-container">
+                      <img
+                        src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/c/t/x/-original-imah6s6prqw3w883.jpeg?q=70&crop=false"
+                        alt="watch"
+                      />
+                      <div>
+                        <p id="title">
+                          Casio, Fastrack, Titan, Noise, Boat, Rolex
+                        </p>
+                        <p class="offer">Upto 80%+Extra 10% Off</p>
+                      </div>
+                      <img
+                        id="list-link"
+                        src="./assets/shift_right.svg"
+                        alt="link"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="list-container">
+                      <img
+                        src="https://rukminim2.flixcart.com/image/416/416/l4x2rgw0/monitor/n/y/y/q24i-20-full-hd-23-8-66eegac3in-lenovo-original-imagfpgxzsk8ef26.jpeg?q=70&crop=false"
+                        alt="TV"
+                      />
+                      <div>
+                        <p id="title">Best of Electronics</p>
+                        <p class="offer">Extra 10% Off</p>
+                      </div>
+                      <img
+                        id="list-link"
+                        src="./assets/shift_right.svg"
+                        alt="link"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="list-container">
+                      <img
+                        src="https://rukminim2.flixcart.com/image/416/416/xif0q/shopsy-post-it/g/3/z/400-colorful-sticky-note-sheets-memo-pad-time-post-note-paper-original-imah34ygyearzmr2.jpeg?q=70&crop=false"
+                        alt="sticky notes"
+                      />
+                      <div>
+                        <p id="title">Stationary items</p>
+                        <p class="offer">Extra 10% Off</p>
+                      </div>
+                      <img
+                        id="list-link"
+                        src="./assets/shift_right.svg"
+                        alt="link"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="list-container">
+                      <img
+                        src="https://rukminim2.flixcart.com/image/416/416/xif0q/wall-decoration/p/f/y/stylish-wooden-welcome-to-our-sweet-home-wall-hanging-for-home-original-imagnjsqnjmzsr2q.jpeg?q=70&crop=false"
+                        alt="Home decor"
+                      />
+                      <div>
+                        <p id="title">Best of Home Decor</p>
+                        <p class="offer">From ₹49</p>
+                      </div>
+                      <img
+                        id="list-link"
+                        src="./assets/shift_right.svg"
+                        alt="link"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="list-container">
+                      <img
+                        src="https://rukminim2.flixcart.com/image/416/416/xif0q/home-temple/r/2/2/23-46-5-p18n-rajasthani-art-56-original-imah97rtdnjuxdxq.jpeg?q=70&crop=false"
+                        alt="Home temple"
+                      />
+                      <div>
+                        <p id="title">Home Temples & more</p>
+                        <p class="offer">Extra 10% Off</p>
+                      </div>
+                      <img
+                        id="list-link"
+                        src="./assets/shift_right.svg"
+                        alt="link"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="list-container">
+                      <img
+                        src="https://rukminim2.flixcart.com/image/416/416/xif0q/musical-keyboard/a/z/d/37-0-45-37-keys-beston-original-imagyqf8tfvn9xzy.jpeg?q=70&crop=false"
+                        alt="Music"
+                      />
+                      <div>
+                        <p id="title">Premium Music Instruments</p>
+                        <p class="offer">Upto 70% Off</p>
+                      </div>
+                      <img
+                        id="list-link"
+                        src="./assets/shift_right.svg"
+                        alt="link"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="list-container">
+                      <img
+                        src="https://rukminim2.flixcart.com/image/416/416/xif0q/smartwatch/c/t/x/-original-imah6s6prqw3w883.jpeg?q=70&crop=false"
+                        alt="watch"
+                      />
+                      <div>
+                        <p id="title">
+                          Casio, Fastrack, Titan, Noise, Boat, Rolex
+                        </p>
+                        <p class="offer">Upto 80%+Extra 10% Off</p>
+                      </div>
+                      <img
+                        id="list-link"
+                        src="./assets/shift_right.svg"
+                        alt="link"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="list-container">
+                      <img
+                        src="https://rukminim2.flixcart.com/image/416/416/l4x2rgw0/monitor/n/y/y/q24i-20-full-hd-23-8-66eegac3in-lenovo-original-imagfpgxzsk8ef26.jpeg?q=70&crop=false"
+                        alt="TV"
+                      />
+                      <div>
+                        <p id="title">Best of Electronics</p>
+                        <p class="offer">Extra 10% Off</p>
+                      </div>
+                      <img
+                        id="list-link"
+                        src="./assets/shift_right.svg"
+                        alt="link"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="list-container">
+                      <img
+                        src="https://rukminim2.flixcart.com/image/416/416/xif0q/shopsy-post-it/g/3/z/400-colorful-sticky-note-sheets-memo-pad-time-post-note-paper-original-imah34ygyearzmr2.jpeg?q=70&crop=false"
+                        alt="sticky notes"
+                      />
+                      <div>
+                        <p id="title">Stationary items</p>
+                        <p class="offer">Extra 10% Off</p>
+                      </div>
+                      <img
+                        id="list-link"
+                        src="./assets/shift_right.svg"
+                        alt="link"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="list-container">
+                      <img
+                        src="https://rukminim2.flixcart.com/image/416/416/xif0q/wall-decoration/p/f/y/stylish-wooden-welcome-to-our-sweet-home-wall-hanging-for-home-original-imagnjsqnjmzsr2q.jpeg?q=70&crop=false"
+                        alt="Home decor"
+                      />
+                      <div>
+                        <p id="title">Best of Home Decor</p>
+                        <p class="offer">From ₹49</p>
+                      </div>
+                      <img
+                        id="list-link"
+                        src="./assets/shift_right.svg"
+                        alt="link"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="list-container">
+                      <img
+                        src="https://rukminim2.flixcart.com/image/416/416/xif0q/home-temple/r/2/2/23-46-5-p18n-rajasthani-art-56-original-imah97rtdnjuxdxq.jpeg?q=70&crop=false"
+                        alt="Home temple"
+                      />
+                      <div>
+                        <p id="title">Home Temples & more</p>
+                        <p class="offer">Extra 10% Off</p>
+                      </div>
+                      <img
+                        id="list-link"
+                        src="./assets/shift_right.svg"
+                        alt="link"
+                      />
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="list-container">
+                      <img
+                        src="https://rukminim2.flixcart.com/image/416/416/xif0q/musical-keyboard/a/z/d/37-0-45-37-keys-beston-original-imagyqf8tfvn9xzy.jpeg?q=70&crop=false"
+                        alt="Music"
+                      />
+                      <div>
+                        <p id="title">Premium Music Instruments</p>
+                        <p class="offer">Upto 70% Off</p>
+                      </div>
+                      <img
+                        id="list-link"
+                        src="./assets/shift_right.svg"
+                        alt="link"
+                      />
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div>
-
+          <!-- advertisement  -->
+          <div class="adv" role="none">
+            <img
+              src="https://rukminim2.flixcart.com/fk-p-flap/530/810/image/43ff881706361612.jpeg?q=20"
+              alt="advertise"
+            />
           </div>
         </div>
-        <div></div>
       </section>
       <section></section>
     </main>
