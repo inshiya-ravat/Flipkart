@@ -274,6 +274,9 @@ main {
   .product-list {
     display: inline-block;
   }
+  .deals-section{
+    width: 97%;
+  }
 }
 @media screen and (max-width: 645px) {
   #more {
