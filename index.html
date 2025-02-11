@@ -14,50 +14,52 @@
   </head>
   <body>
     <header>
-      <div>
-        <div>
-            <svg></svg>
-        </div>
-        <div>
-            <input>
+      <div class="header-search">
+        <button aria-label="flipkart logo" title="Flipkart">
+          <img src="./assets/logo.svg" class="logo" alt="Flipkart logo">
+        </button>
+        <div
+            tabindex="0"
+          title="Search for products, brads and more"
+          aria-label="search for products, branch and more"
+          class="search-input"
+        >
+          <input
+            type="search"
+            placeholder="Search for products,brands, and more"
+          />
+          <div>
+            <img src="./assets/search.svg" alt="search icon">
+          </div>
         </div>
       </div>
-      <nav>
-        <button></button>
-        <div>
-          <a href="#">More</a>
+      <nav class="header-actions">
+        <button
+          title="Login"
+          onclick="alert('Sucessfully logged in')"
+          aria-label="Click this button to login"
+        >
+          Login
+        </button>
+        <div class="action-container" id="more">
+          <a href="#" aria-label="more" title="More">More</a>
           <div>
-            <svg></svg>
+            <img src="./assets/more.svg" alt="down arrow">
           </div>
         </div>
-        <div>
+        <div class="action-container">
           <div>
-            <svg></svg>>
+            <img src="./assets/cart.svg" alt="cart">
           </div>
-          <a href="#">Cart</a>
+          <a href="#" aria-label="go to cart" title="cart">Cart</a>
         </div>
       </nav>
     </header>
+    <section class="category"></section>
     <section>
-    </section>
-    <section>
-      <div>
-        <div>
-            <div></div>
-            <div></div>
-        </div>
-        <div></div>
-      </div>
+      <div></div>
       <div></div>
     </section>
-    <section>
-        <div>
-            <div></div>
-            <div></div>
-        </div>
-        <div>
-
-        </div>
-    </section>
+    <section></section>
   </body>
 </html>
