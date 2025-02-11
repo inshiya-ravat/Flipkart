@@ -4,6 +4,8 @@
   --grey: #707070;
   --offer: #108934;
   --btn-wieght: 500;
+  --shadow: rgba(234, 234, 234, 1.00);
+  --bg: #F0F0F0;
 }
 body {
   box-sizing: border-box;
@@ -72,7 +74,9 @@ header {
 
 /* main  */
 main{
-  background-color: #F0F0F0;
+  background-color: var(--bg);
+  height: 93vh;
+  text-align: center;
 }
 /* categories section  */
 .categories{
@@ -82,7 +86,7 @@ main{
   gap: 60px;
   background-color: white;
   align-items: center;
-  box-shadow: 1px 1px 1px 1px rgba(234, 234, 234, 1.00);
+  box-shadow: 1px 1px 1px 1px var(--shadow);
   overflow-x: scroll;
 }
 .categories::-webkit-scrollbar{
@@ -110,6 +114,42 @@ main{
 }
 .categories > a{
   text-decoration: none;
+}
+
+/* deals of the day  */
+.deals{
+  background-color: white;
+  box-shadow: 1px 1px 5px 1px var(--shadow);
+  margin: 20px 5px 5px 5px;
+  display: inline-block;
+  width: 80%;
+}
+.deals-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-bottom: 2px solid var(--bg);
+}
+.deals-header > div{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+} 
+.deals-header p{
+  margin: 0;
+  color: var(--grey);
+}
+.deals-header h5{
+  margin: 0;
+  margin-right: 10px;
+}
+.deals button{
+  background-color: var(--blue);
+  color: white;
+  font-weight: var(--btn-wieght);
+  font-size: 0.8rem;
+  padding: 10px;
 }
 
 @media screen and (max-width:590px) {
