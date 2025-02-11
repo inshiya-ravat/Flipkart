@@ -8,11 +8,10 @@ button{
 header {
   display: flex;
   width: 100vw;
-  min-width: 1380px;
   background-color: #2874f1;
   justify-content: space-around;
-  align-items: center;
-  padding: 10px 200px;
+  padding: 10px 10px;
+  gap: 8px;
 }
 .header-search {
   display: flex;
@@ -64,18 +63,27 @@ header {
   text-decoration: none;
 }
 
-@media screen and (max-width: 450px) {
-  .search-input {
+@media screen and (max-width:590px) {
+  .search-input{
     display: none;
   }
-  .logo {
-    width: 100px;
-    height: 70px;
+}
+@media screen and (max-width:645px){
+  #more{
+    display: none;
   }
-  .header-actions {
-    font-size: x-large;
-  }
-  header button {
-    font-size: x-large;
-  }
+}
+@media screen and (max-width:786px) {
+    .action-container a{
+        display: none;
+    }
+}
+@media screen and (max-width: 1114px) {
+    header{
+        max-width: 1114px;
+        padding: 10px 10px;
+    }
+    [type="search"]{
+        width: 10rem;
+    }
 }
