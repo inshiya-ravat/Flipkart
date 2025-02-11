@@ -295,6 +295,15 @@ main {
   .action-container a {
     display: none;
   }
+  .product-parent{
+    display: none;
+  }
+  .product-list{
+    display: inline-block;
+  }
+  .deals-section{
+    width: 97%;
+  }
 }
 @media screen and (max-width: 1114px) {
   header {
