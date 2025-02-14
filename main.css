@@ -90,6 +90,10 @@ header {
   font-weight: 600;
   text-decoration: none;
 }
+.hamburger-menu{
+  margin-right: 10px;
+  display: none;
+}
 
 /* main  */
 main {
@@ -152,6 +156,7 @@ main {
 }
 .product-list p {
   margin: 0;
+  width: fit-content;
 }
 .product-list img {
   width: 50px;
@@ -168,10 +173,14 @@ main {
 }
 .list-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   border-bottom: 2px solid var(--shadow);
   align-items: center;
   padding: 10px;
+}
+.list-child-left{
+  display: flex;
+  gap: 10px;
 }
 
 /* deals of the day  */
@@ -315,6 +324,13 @@ main {
   #list-link {
     display: none;
   }
+  .list-container{
+    overflow: hidden;
+  }
+  .list-child-left{
+    gap: 0px;
+    padding: 10px 10px 10px 0px;
+  }
 }
 @media screen and (max-width: 420px) {
   .product-header h5,
@@ -325,6 +341,11 @@ main {
     text-align: left;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product-list p{
+    width: 20ch;
   }
 }
 @media screen and (max-width: 590px) {
@@ -352,6 +373,9 @@ main {
   }
 }
 @media screen and (max-width: 786px) {
+  .hamburger-menu{
+    display: inline;
+  }
   .action-container a {
     display: none;
   }
