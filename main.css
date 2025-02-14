@@ -14,6 +14,22 @@ button {
   background-color: inherit;
   border: none;
 }
+
+/* hidden link  */
+.hidden-link {
+  position: absolute;
+  left: 1%;
+  top: -40%;
+  text-decoration: none;
+  background-color: var(--blue);
+  color: white;
+  border: 2px solid var(--blue-border);
+}
+.hidden-link:focus {
+  top: 2%;
+}
+
+/* header  */
 header {
   display: flex;
   width: 100vw;
@@ -25,6 +41,9 @@ header {
 .header-search {
   display: flex;
   gap: 8px;
+}
+.header-search label {
+  visibility: hidden;
 }
 .header-search svg {
   vertical-align: middle;
@@ -70,6 +89,10 @@ header {
   color: white;
   font-weight: 600;
   text-decoration: none;
+}
+.hamburger-menu{
+  margin-right: 10px;
+  display: none;
 }
 
 /* main  */
@@ -134,13 +157,14 @@ main {
 }
 .product-list p {
   margin: 0;
+  width: fit-content;
 }
 .product-list img {
   width: 50px;
   aspect-ratio: 1/1;
   object-fit: contain;
 }
-#list-link {
+.list-link {
   width: 15px;
   height: 15px;
 }
@@ -150,10 +174,14 @@ main {
 }
 .list-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   border-bottom: 2px solid var(--shadow);
   align-items: center;
   padding: 10px;
+}
+.list-child-left{
+  display: flex;
+  gap: 10px;
 }
 
 /* deals of the day  */
@@ -206,8 +234,8 @@ main {
   margin: 0;
   margin-right: 10px;
 }
-.deals button,
-.products button {
+.deals-header button,
+.product-header button {
   background-color: var(--blue);
   color: white;
   font-weight: var(--btn-wieght);
@@ -246,7 +274,7 @@ main {
 .product p {
   margin: 10px;
 }
-#title {
+.title {
   width: 20ch;
   white-space: nowrap;
   overflow: hidden;
@@ -291,21 +319,34 @@ main {
 
 /* media queries */
 @media screen and (max-width: 350px) {
-  .deals-header h5{
+  .deals-header h5 {
     font-size: 16px;
   }
   #list-link {
     display: none;
   }
+  .list-container{
+    overflow: hidden;
+  }
+  .list-child-left{
+    gap: 0px;
+    padding: 10px 10px 10px 0px;
+  }
 }
 @media screen and (max-width: 420px) {
-  .product-header h5, .product-header p{
+  .product-header h5,
+  .product-header p {
     font-size: 16px;
     width: 18ch;
     overflow: hidden;
     text-align: left;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 480px) {
+  .product-list p{
+    width: 20ch;
   }
 }
 @media screen and (max-width: 590px) {
@@ -333,6 +374,9 @@ main {
   }
 }
 @media screen and (max-width: 786px) {
+  .hamburger-menu{
+    display: inline;
+  }
   .action-container a {
     display: none;
   }
